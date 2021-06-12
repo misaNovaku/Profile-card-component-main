@@ -1,0 +1,128 @@
+
+*,*::before , *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --color-dark-cyan:hsl(185, 96%, 21%);
+    --color-very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --color-dark-grayish-blue: hsl(227, 10%, 46%);
+    --color-dark-gray: hsl(0, 0%, 59%);
+    --color-white:#fff;
+
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--color-dark-cyan);
+    background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right 40vw bottom 50vh, left 40vw top 50vh;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    
+}
+
+.card {
+    background-color: var(--color-white);
+    height: 20.7em;
+    width: 19.58em;
+    border-radius: 15px;
+}
+
+.pic {
+    background-image: url("../images/bg-pattern-card.svg");
+    height: 37%;
+    border-radius: 15px 15px 0 0;
+}
+
+.pic > img {
+    border-radius: 50%;
+    border: 5px solid var(--white);
+    position: relative;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.who {
+    height: 39%;
+    border-bottom: 0.5px solid var(--color-dark-gray);
+    text-align: center;
+}
+
+.who  .name {
+    font-weight: 700;
+  
+}
+
+.who  .age {
+    margin-left: 1.5em;
+}
+
+.greytext {
+    color: var(--color-dark-grayish-blue);
+}
+
+.city {
+    font-size: 0.8em;
+}
+
+.who > p + p {
+    padding-top: 0.75em;
+}
+
+.who > p {
+    padding-top: 3em;
+}
+
+.stats {
+    height: 24%;
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.stat {
+    width: 4em;
+    text-align: center;
+    line-height: 1.2em;
+}
+
+.stats > .stat > .nr {
+    font-weight: 700;
+}
+
+.stats > .stat > .cat {
+    font-size: 0.6em;
+}
+
+.attribution {
+    font-size: 0.5rem;
+    text-align: center;
+    margin-top: 3em;
+}
+
+.attribution a {
+    font-size: 2em;
+    color: #fff;
+    text-decoration: none;
+    padding-left: .3em;
+    padding-right: 1em;
+    transition: opacity 250ms ease-in-out;
+}
+
+.attribution > span {
+    font-size: 1rem;
+}
+
+.attribution a:active,
+.attribution a:hover {
+   opacity: .6;
+}
+
